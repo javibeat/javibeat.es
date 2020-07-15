@@ -13,7 +13,7 @@ $(function(){
 	    }
 	});
 
-	$('nav#main').any({
+	$('nav#main').affix({
       offset: {
         top: function() { return $(window).height()-80; }
       }
@@ -24,7 +24,7 @@ $(function(){
 		$(this).addClass('active');
 	});
 
-	var menuOpen = true;
+	var menuOpen = false;
 
 	$('nav#main ul').click(function(e){
 		if(menuOpen == false){
