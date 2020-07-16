@@ -40,7 +40,7 @@ a { outline: none !important; }
 
 .centered { margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
 
-.centered.medium { width: 100%; max-width: 500px; padding: 0 20px; }
+.centered.medium { width: 100%; max-width: 800px; padding: 0 20px; }
 
 .centered.large { max-width: 920px !important; padding: 20px; width: 100%; min-height: 400px; margin: auto !important; }
 @media screen and (max-width: 620px) { .centered.large { margin: 0 auto; } }
@@ -109,7 +109,7 @@ blockquote { font-family: Georgia; font-style: italic; font-size: 1.3em; color: 
 nav#main { position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: #000; border-bottom: 1px solid #222; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main:after { display: block; } }
 nav#main .logo { height: 80px; line-height: 80px; padding: 0 40px; position: absolute; left: 0; color: #666; font-family: "Oswald", Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-@media screen and (max-width: 620px) { nav#main .logo { padding: 0 12px; } }
+@media screen and (max-width: 220px) { nav#main .logo { padding: 0 12px; } }
 nav#main ul { list-style: none; height: 80px; padding: 0; margin: 0; text-align: center; font-size: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main ul { text-align: right; } }
 nav#main ul li { height: 80px; display: inline-block; border-left: 1px solid #222; position: relative; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
@@ -141,7 +141,7 @@ nav#main ul li:hover ul.dropdown { display: block; }
   nav#main ul.hover li:hover ul.dropdown li:hover { line-height: 50px; }
   nav#main ul.hover li a { display: block; width: 100%; height: 50px; line-height: 50px; } }
 nav#main.affix { position: fixed; z-index: 9999; top: 0; bottom: auto; height: 40px; border-bottom: 1px solid #222; }
-nav#main.affix .logo { height: 480px; line-height: 40px; padding: 0 10px; }
+nav#main.affix .logo { height: 80px; line-height: 40px; padding: 0 10px; }
 nav#main.affix ul { height: 40px; }
 nav#main.affix ul li { height: 40px; }
 nav#main.affix ul li a { height: 40px; line-height: 40px; }
