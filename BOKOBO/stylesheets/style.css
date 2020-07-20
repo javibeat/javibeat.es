@@ -36,9 +36,9 @@ a { outline: none !important; }
 /*
 	Layout
 */
-.content img { margin: 20px 0; max-width: 100%; }
+.content img { margin: 20px 20px; max-width: 100%; }
 
-.centered { margin: auto; position: absolute; top: -15px; left: 0; bottom: 20px; right: 0; height: 250px; }
+.centered { margin: auto; position: absolute; top: -25px; left: 0; bottom: 20px; right: 0; height: 250px; }
 
 .centered.medium { width: 100%; max-width: 800px; padding: -10px 20px; }
 
@@ -64,7 +64,7 @@ section#portfolio .item:hover img { -webkit-transform: scale(1.1, 1.1); -moz-tra
 section.title-block { height: 50% !important; min-height: 50%; }
 section .block { padding: 40px; }
 
-img.fs { min-height: 100%; min-width: 624px; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
+img.fs { min-height: 100%; min-width: 524px; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
 img.faded { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=50); -moz-opacity: 0.5; -khtml-opacity: 0.5; opacity: 0.5; background: #000; }
 
 form { margin-top: 20px; padding: 20px; border: 1px solid rgba(0, 0, 0, 0.1); -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
