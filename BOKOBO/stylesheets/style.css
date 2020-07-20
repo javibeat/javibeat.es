@@ -43,7 +43,7 @@ a { outline: none !important; }
 .centered.medium { width: 100%; max-width: 500px; padding: -10px 20px; }
 
 .centered.large { max-width: 920px !important; padding: 20px; width: 100%; min-height: 400px; margin: auto !important; }
-@media screen and (max-width: 620px) { .centered.large { margin: 0 auto; } }
+@media screen and (max-width: 620px) { .centered.large { margin: 10 auto; } }
 @media screen and (max-width: 992px) { .centered.large { position: relative !important; padding: 0 !important; height: auto !important; } }
 
 section { min-height: 100%; width: 100%; position: relative; padding: 75px 30px; }
