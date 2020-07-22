@@ -10010,6 +10010,12 @@ hr.divider {
   border-color: #f6004c;
 }
 
+hr.divisor {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #ffffff;
+}
+
 hr.light {
   border-color: #fff;
 }
@@ -10028,7 +10034,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 #mainNav {
