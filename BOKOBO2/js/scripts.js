@@ -52,7 +52,7 @@
     mainClass: 'mfp-img-mobile',
     gallery: {
       enabled: true,
-      navigateByImgClick: true,
+      navigateByImgClick: false,
       preload: [0, 1]
     },
     image: {
