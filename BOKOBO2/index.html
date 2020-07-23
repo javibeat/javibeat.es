@@ -112,8 +112,8 @@
                 <hr class="divisor my-4" />
                 <div class="row no-gutters">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/11.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/11.jpg" data-url="https://www.bokobo.art/obra/437/ngams-la-promenade">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" data-url="https://www.bokobo.art/obra/437/ngams-la-promenade" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Pintura</div>
                                 <div class="project-name">Ngam`s</div>
@@ -122,8 +122,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/22.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/22.jpg" data-url="https://www.bokobo.art/obra/450/sterrykscinematographer-the-barbershop">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" data-url="https://www.bokobo.art/obra/450/sterrykscinematographer-the-barbershop" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Fotografía</div>
                                 <div class="project-name">Sterry</div>
@@ -132,8 +132,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/33.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/33.jpg" data-url="https://www.bokobo.art/obras/?search=Juan+cardoso">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" data-url="https://www.bokobo.art/obras/?search=Juan+cardoso" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Pintura</div>
                                 <div class="project-name">Juan Cardoso</div>
@@ -142,8 +142,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/44.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/44.jpg" data-url="https://www.bokobo.art/obra/278/fenna-van-der-vliet-goldenway-2018-">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" data-url="https://www.bokobo.art/obra/278/fenna-van-der-vliet-goldenway-2018-" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Arte Conceptual</div>
                                 <div class="project-name">Fenna Van der Vliet</div>
@@ -152,8 +152,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/55.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/55.jpg" data-url="https://www.bokobo.art/obra/403/maria-gonzaga-ante-el-espejo">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" data-url="https://www.bokobo.art/obra/403/maria-gonzaga-ante-el-espejo" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Pintura</div>
                                 <div class="project-name">María Gonzaga</div>
@@ -162,8 +162,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/66.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/66.jpg" data-url="https://www.bokobo.art/obra/482/jaime-sebe-the-call">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" data-url="https://www.bokobo.art/obra/482/jaime-sebe-the-call"/>
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">Fotografía</div>
                                 <div class="project-name">Jaime Sebe</div>
@@ -219,5 +219,24 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var linksAndImages = {};
+                var x = document.getElementsByClassName("portfolio-box");
+
+                for(i=0; i<x.length; i++){
+                    linksAndImages[x[i].getAttribute("href")] = x[i].getAttribute("data-url");
+                }
+
+                console.log(linksAndImages)
+                $('body').on('click', '.mfp-img', function(e){
+                    //e.target
+                    var selectedImage = e.target.getAttribute('src');
+                    console.log(selectedImage)
+                    console.log(linksAndImages[selectedImage])
+                    window.open(linksAndImages[selectedImage] , "_blank");
+                })  
+            });
+        </script>
     </body>
 </html>
