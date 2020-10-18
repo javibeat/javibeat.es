@@ -547,9 +547,9 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 676px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 640px;
+    max-width: 540px;
   }
 }
 @media (min-width: 768px) {
